@@ -9,4 +9,5 @@ import (
 func main() {
 	fmt.Print("Your Go Version is ")
 	fmt.Println(dawlib.Version())
+	dawlib.Thunder(5)
 }
