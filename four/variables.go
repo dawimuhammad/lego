@@ -20,31 +20,38 @@ package main
 //
 // ---------------------------------------------------------
 
-import "fmt"
-
 func main() {
-	// integer literals
-	fmt.Println(
-		100, -2, 10, 101,
-	)
+	// prints pyramid
+	Pyramid(20)
 
-	// float literals
-	fmt.Println(
-		-.5, 100., -1.,
-	)
+	// // integer literals
+	// fmt.Println(
+	// 	100, -2, 10, 101,
+	// )
 
-	// bool literals
-	fmt.Println(
-		true,
-		false,
-	)
+	// // float literals
+	// fmt.Println(
+	// 	-.5, 100., -1.,
+	// )
 
-	// string literals
-	fmt.Println(
-		"",
-		"Hi",
-		"Muhamad Haddawi",
-	)
+	// // bool literals
+	// fmt.Println(
+	// 	true,
+	// 	false,
+	// )
 
-	fmt.Println(0x96)
+	// // string literals
+	// fmt.Println(
+	// 	"",
+	// 	"Hi",
+	// 	"Muhamad Haddawi",
+	// )
+
+	// fmt.Println(0x96)
+
+	// var iniInt int
+	// var iniString string
+
+	// fmt.Println(iniInt)
+	// fmt.Println(iniString)
 }
