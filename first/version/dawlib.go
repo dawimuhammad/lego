@@ -32,7 +32,8 @@ func Thunder(lightningLength int) {
 THORRRRR!!!!`)
 
 	for i := 0; i <= (lightningLength * 2); i++ {
-		var stringLightning string = ""
+		var stringLightning string
+
 		if i == lightningLength {
 			for j := 0; j < lightningLength; j++ {
 				stringLightning += " *"

@@ -21,8 +21,18 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	// Exercise Variables
+	ExerciseInt()
+	ExerciseBool()
+	ExerciseFloat()
+	ExerciseString()
+	ExerciseUndeclarables()
+	ExerciseWithBits()
+	ExerciseMultiple()
+	ExerciseMultipleTwo()
+
 	// prints pyramid
-	Pyramid(20)
+	// Pyramid(20)
 
 	// // integer literals
 	// fmt.Println(
