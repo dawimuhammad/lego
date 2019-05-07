@@ -30,6 +30,7 @@ func main() {
 	ExerciseWithBits()
 	ExerciseMultiple()
 	ExerciseMultipleTwo()
+	ExerciseShortDeclaration()
 
 	// prints pyramid
 	// Pyramid(20)

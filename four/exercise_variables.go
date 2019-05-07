@@ -4,6 +4,9 @@ import "fmt"
 
 var isLiquidos bool
 
+// can not use short declaration on package scope
+// isPackageScope := true
+
 // ExerciseInt function contains exercise with integer variable
 func ExerciseInt() {
 	// ---------------------------------------------------------
@@ -266,4 +269,23 @@ func ExerciseWrongDoer() {
 	// fmt.Println("Wrong doer", doer)
 
 	// var doer string
+}
+
+// ExerciseShortDeclaration contains exercise to learn how to use short variable declaration
+func ExerciseShortDeclaration() {
+	var shortDeclaration2 = "shortDeclaration"
+	var shortDeclaration1 = true
+	var speed = 10
+	shortDeclaration := true
+
+	fmt.Println("initial speed : ", speed, " km/h")
+
+	safe, speed := true, 50
+
+	fmt.Println("\nShort Variable Declaration")
+	fmt.Println(shortDeclaration2)
+	fmt.Println(shortDeclaration1)
+	fmt.Println(shortDeclaration)
+	fmt.Println("is it safe : ", safe)
+	fmt.Println("speed : ", speed, " km/h")
 }
