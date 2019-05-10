@@ -21,16 +21,22 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	// Exercise Short Declaration
+	ShortDeclaration()
+	ShortWithExpression()
+	ShortDiscard()
+	Redeclare()
+
 	// Exercise Variables
-	ExerciseInt()
-	ExerciseBool()
-	ExerciseFloat()
-	ExerciseString()
-	ExerciseUndeclarables()
-	ExerciseWithBits()
-	ExerciseMultiple()
-	ExerciseMultipleTwo()
-	ExerciseShortDeclaration()
+	// ExerciseInt()
+	// ExerciseBool()
+	// ExerciseFloat()
+	// ExerciseString()
+	// ExerciseUndeclarables()
+	// ExerciseWithBits()
+	// ExerciseMultiple()
+	// ExerciseMultipleTwo()
+	// ExerciseShortDeclaration()
 
 	// prints pyramid
 	// Pyramid(20)
