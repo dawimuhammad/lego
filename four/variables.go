@@ -26,6 +26,8 @@ func main() {
 	ShortWithExpression()
 	ShortDiscard()
 	Redeclare()
+	MultipleAssignment()
+	PathSeparator("/api/auth/login/key.txt")
 
 	// Exercise Variables
 	// ExerciseInt()

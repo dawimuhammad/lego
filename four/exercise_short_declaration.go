@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // ShortDeclaration contains exercise to learn how to declares variables using short declaration in go
 func ShortDeclaration() {
@@ -97,4 +100,28 @@ func Redeclare() {
 		"age : ", age,
 		"yourAge : ", yourAge,
 		"ratio : ", ratio)
+}
+
+// MultipleAssignment contains
+func MultipleAssignment() {
+	var (
+		speed int
+		now   time.Time
+	)
+
+	speed, now = 100, time.Now()
+
+	fmt.Println(speed, now)
+
+	// perform swap values between two variables
+
+	var x = 10
+	var y = 12
+
+	fmt.Println(x, y)
+
+	x, y = y, x
+
+	fmt.Println(x, y)
+
 }
