@@ -22,12 +22,22 @@ package main
 
 func main() {
 	// Exercise Short Declaration
-	ShortDeclaration()
-	ShortWithExpression()
-	ShortDiscard()
-	Redeclare()
-	MultipleAssignment()
-	PathSeparator("/api/auth/login/key.txt")
+	MakeItBlue()
+	VarToVar()
+	AssignWithExpression()
+	FindPerimeter()
+	MultiAssignment()
+	MultiShortFunc()
+	SwapperFirst()
+	DiscardFile()
+
+	// Exercise Short Declaration
+	// ShortDeclaration()
+	// ShortWithExpression()
+	// ShortDiscard()
+	// Redeclare()
+	// MultipleAssignment()
+	// PathSeparator("/api/auth/login/key.txt")
 
 	// Exercise Variables
 	// ExerciseInt()
