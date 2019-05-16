@@ -21,15 +21,21 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	// Exercise Type Conversion
+	ConvertAndFixOne()
+	ConvertAndFixTwo()
+	ConvertAndFixThree()
+	ConvertAndFixFour()
+
 	// Exercise Short Declaration
-	MakeItBlue()
-	VarToVar()
-	AssignWithExpression()
-	FindPerimeter()
-	MultiAssignment()
-	MultiShortFunc()
-	SwapperFirst()
-	DiscardFile()
+	// MakeItBlue()
+	// VarToVar()
+	// AssignWithExpression()
+	// FindPerimeter()
+	// MultiAssignment()
+	// MultiShortFunc()
+	// SwapperFirst()
+	// DiscardFile()
 
 	// Exercise Short Declaration
 	// ShortDeclaration()
