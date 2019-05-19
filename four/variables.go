@@ -21,11 +21,15 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	// Arguments
+	// ArgsExercise()
+	GreetPeople()
+
 	// Exercise Type Conversion
-	ConvertAndFixOne()
-	ConvertAndFixTwo()
-	ConvertAndFixThree()
-	ConvertAndFixFour()
+	// ConvertAndFixOne()
+	// ConvertAndFixTwo()
+	// ConvertAndFixThree()
+	// ConvertAndFixFour()
 
 	// Exercise Short Declaration
 	// MakeItBlue()
