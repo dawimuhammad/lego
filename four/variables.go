@@ -23,7 +23,10 @@ package main
 func main() {
 	// Arguments
 	// ArgsExercise()
-	GreetPeople()
+	// GreetPeople()
+	CountArgs()
+	PrintPath()
+	PrintNames()
 
 	// Exercise Type Conversion
 	// ConvertAndFixOne()
