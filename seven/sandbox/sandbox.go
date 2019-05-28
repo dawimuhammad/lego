@@ -151,3 +151,11 @@ func PrintYourName() {
 
 	fmt.Printf("Your name is %s and your lastname is %s", firstName, lastName)
 }
+
+func Aritmetchics() {
+	var ratio float64 = 3 / 2
+	var ratioFloat = float64(int(3) / int(2))
+
+	fmt.Printf("\nAritmethics()\n")
+	fmt.Printf("ratio : %f, ratioFloat : %f", ratio, ratioFloat)
+}

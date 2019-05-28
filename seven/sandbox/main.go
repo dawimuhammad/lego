@@ -16,4 +16,8 @@ func main() {
 	CallTheType()
 
 	PrintYourName()
+
+	// Aritmethics()
+
+	Aritmetchics()
 }
