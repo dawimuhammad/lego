@@ -1,7 +1,9 @@
 package main
 
 func main() {
-	OptimalTypes()
+	// OptimalTypes()
 
-	TypeProblem()
+	// TypeProblem()
+
+	ParseArgNumbers()
 }

@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
 
 // OptimalTypes contains exercise to learn many go data types
 func OptimalTypes() {
@@ -92,4 +96,80 @@ func TypeProblem() {
 
 	// UNCOMMENT THIS:
 	fmt.Println("are they equal?", width == uint8(height))
+}
+
+// ParseArgNumbers contain go exercise to learn how to parse arg numbers
+func ParseArgNumbers() {
+	// ---------------------------------------------------------
+	// EXERCISE: Parse Arg Numbers
+	//
+	//  Use strconv.ParseInt function to get int8, int16, and
+	//  int32, and int64 values from command-line.
+	//
+	// HINT
+	//  The third argument to ParseInt function represents
+	//  the bitsize.
+	//
+	//  So, giving it 8 returns an int8 convertable value;
+	//  whereas 16 returns an int16 convertable value.
+	//
+	//  Please explore the documentation of ParseInt function
+	//  and learn how it works.
+	//
+	// EXPECTED OUTPUT
+	//   When runned like this:
+	//     go run main.go 50 25000 2000000 50000000000000000 00000100
+	//
+	//   It should return this:
+	//     int8 value is : 50
+	//     int16 value is: 25000
+	//     int32 value is: 2000000
+	//     int64 value is: 50000000000000000
+	//     00000100 is: 4
+	// ---------------------------------------------------------
+
+	// --------------------------------------
+	// EXAMPLE:
+	// --------------------------------------
+	// How to get an int8 from command-line:
+	// First argument should be a value of -128 to 127 range
+	//
+	// Second argument: 10 means decimal number
+	// Third argument : 8 means 8-bits (int8)
+	val, _ := strconv.ParseInt(os.Args[1], 10, 8)
+
+	// Now the val variable is int64 because ParseInt
+	// returns an int64. But, since I passed 8 as its third
+	// argument, it returns int8 convertable value.
+	//
+	// Try running the program with a value of -128 to 127
+	// Running it beyond that range will result in
+	// either -128 or 127.
+	fmt.Printf("%T value is : %d \n", int8(val), int8(val))
+
+	// --------------------------------------
+	// NOW IT'S YOUR TURN!
+	// --------------------------------------
+
+	// 1. Get an int16 value using ParseInt and convert it and print it
+	val, _ = strconv.ParseInt(os.Args[2], 10, 16)
+	fmt.Printf("%T value is : %d \n", int16(val), int16(val))
+
+	// 2. Get an int32 value using ParseInt and convert it and print it
+	val, _ = strconv.ParseInt(os.Args[3], 10, 32)
+	fmt.Printf("%T value is : %d \n", int32(val), int32(val))
+
+	// 3. Get an int64 value using ParseInt and convert it and print it
+	val, _ = strconv.ParseInt(os.Args[4], 10, 64)
+	fmt.Printf("%T value is : %d \n", int64(val), int64(val))
+
+	// 4. Get an int8 value using ParseInt and convert it and print it
+	//    But this time, get the value in bits.
+	//
+	//    For example : 00000100
+	//    Should print: 4
+
+	val, _ = strconv.ParseInt(os.Args[5], 2, 8)
+
+	fmt.Printf("%s is : %d \n", os.Args[5], int8(val))
 }
