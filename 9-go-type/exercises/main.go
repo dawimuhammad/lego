@@ -9,5 +9,7 @@ func main() {
 
 	// TimeMultiplier()
 
-	RefactorFeetToMeter()
+	// RefactorFeetToMeter()
+
+	ConvertTypes()
 }
