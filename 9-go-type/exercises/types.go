@@ -31,10 +31,10 @@ func OptimalTypes() {
 	// ---
 
 	// an english letter (search web for: ascii control code)
-	var letter byte = 'A'
+	var letter byte = 'A' // equals uint8, consist of 8 bits of memory
 
 	// a non-english letter (search web for: unicode codepoint)
-	var unicodeLetter rune
+	var unicodeLetter rune // rune equals int32, consist of 32 bits of memory
 	unicodeLetter = 'ç' * 'ç'
 
 	// a year in 4 digits like 2040
@@ -53,11 +53,43 @@ func OptimalTypes() {
 	var pi float64
 	pi = 3.141592653589793
 
-	fmt.Println("english letter : ", letter)
+	fmt.Println("letter : ", letter)
+	fmt.Printf("byte : %b\n", letter)
 	fmt.Println("unicodeLetter : ", unicodeLetter)
+	fmt.Printf("rune : %b\n", unicodeLetter)
 	fmt.Println("current year : ", year)
 	fmt.Println("current month : ", month)
 	fmt.Println("angle circle : ", angle)
 	fmt.Println("speedlight : ", speedLight)
 	fmt.Println("pi : ", pi)
+}
+
+// TypeProblem contains exercise to debug and fix the error from missmatch type
+func TypeProblem() {
+	// ---------------------------------------------------------
+	// EXERCISE: The Type Problem
+	//
+	//  Solve the data type problem in the program.
+	//
+	// EXPECTED OUTPUT
+	//  width: 265 height: 265
+	//  are they equal? true
+	// ---------------------------------------------------------
+
+	// FIX THIS:
+	// Change the following data types to the correct
+	// data types where appropriate.
+
+	var (
+		width  uint8
+		height uint16
+	)
+
+	// DONT TOUCH THIS:
+	width, height = 255, 265
+	width += 10
+	fmt.Printf("width: %d height: %d\n", width, height)
+
+	// UNCOMMENT THIS:
+	fmt.Println("are they equal?", width == uint8(height))
 }
