@@ -7,5 +7,7 @@ func main() {
 
 	// ParseArgNumbers()
 
-	TimeMultiplier()
+	// TimeMultiplier()
+
+	RefactorFeetToMeter()
 }
