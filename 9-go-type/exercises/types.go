@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"time"
 )
 
 // OptimalTypes contains exercise to learn many go data types
@@ -172,4 +173,46 @@ func ParseArgNumbers() {
 	val, _ = strconv.ParseInt(os.Args[5], 2, 8)
 
 	fmt.Printf("%s is : %d \n", os.Args[5], int8(val))
+}
+
+// TimeMultiplier contains exercise to converts input value to time value
+func TimeMultiplier() {
+	// ---------------------------------------------------------
+	// EXERCISE: Time Multiplier
+	//
+	//  You should get an argument from the command-line and
+	//  you need to multiply the time duration value `t` with
+	//  the given argument.
+	//
+	//  1. Get an argument from the command-line
+	//  2. Convert it to int64 and store it in a variable
+	//  3. Multiply the `t` variable with that variable
+	//  4. Print the result
+	//
+	// HINT
+	//  You can use ParseInt to convert the command-line
+	//    argument into an int64 value.
+	//
+	//  You can skip the error value using a blank-identifier.
+	//
+	// EXPECTED OUTPUT
+	//
+	//  When runned like this:
+	//    go run main.go 2
+	//
+	//  It should print this:
+	//    3h0m0s
+	// ---------------------------------------------------------
+
+	// DONT TOUCH THIS
+	// 1h30m means: 1 hour 30 minutes
+	t, _ := time.ParseDuration("1h30m")
+
+	// TYPE YOUR CODE HERE
+	// ....
+	multiplier, _ := strconv.ParseInt(os.Args[1], 10, 64)
+	t *= time.Duration(multiplier)
+
+	// DONT TOUCH THIS
+	fmt.Println(t)
 }

@@ -5,5 +5,7 @@ func main() {
 
 	// TypeProblem()
 
-	ParseArgNumbers()
+	// ParseArgNumbers()
+
+	TimeMultiplier()
 }
